@@ -1,0 +1,32 @@
+{
+  "plugins": {
+    "mini.pick": {
+      "rev": "230805ad6d0d6e4cebbf377bad864ac20b83a1f0",
+      "src": "https://github.com/echasnovski/mini.pick"
+    },
+    "nvim-lspconfig": {
+      "rev": "3e8d598d3b5f8338a41699c436e5fa11d2666cf0",
+      "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "oil.nvim": {
+      "rev": "b73018b75affd13fa38e2fc94ef753b465f770d7",
+      "src": "https://github.com/stevearc/oil.nvim"
+    },
+    "plenary.nvim": {
+      "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
+      "src": "https://github.com/nvim-lua/plenary.nvim"
+    },
+    "telescope.nvim": {
+      "rev": "40aedd8a68c78a656a10a8d62d80c54af59420fb",
+      "src": "https://github.com/nvim-telescope/telescope.nvim"
+    },
+    "typst-preview.nvim": {
+      "rev": "1c2e19486397be1c580b560fc50ee36abe329c46",
+      "src": "https://github.com/chomosuke/typst-preview.nvim"
+    },
+    "vague.nvim": {
+      "rev": "f9060fdaf7b20f68575d6f8214da6f1cf0c72825",
+      "src": "https://github.com/vague2k/vague.nvim"
+    }
+  }
+}
