@@ -10,6 +10,7 @@ vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')
 vim.keymap.set('n', '<leader>w', ':write<CR>')
 vim.keymap.set('n', '<leader>q', ':quit<CR>')
 vim.keymap.set('n', '<leader>e', ':<C-w>d')
+vim.keymap.set('n', '<leader>cd', ':Explore<CR>')
 
 
 vim.pack.add({
