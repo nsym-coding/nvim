@@ -5,13 +5,24 @@ vim.o.tabstop = 4
 vim.o.swapfile = false
 vim.g.mapleader = " "
 vim.o.winborder = "rounded"
+-- Set the GUI font (commented out alternative option)
+vim.o.guifont = "Jetbrains Mono"
+-- Keep 8 lines visible above and below the cursor
+vim.o.scrolloff = 8
+-- Enable true color support
+vim.opt.termguicolors = true
+-- Convert tabs to spaces
+vim.opt.expandtab = true
+-- Enable smart indentation
+vim.opt.smartindent = true
+
+vim.cmd [[colorscheme catppuccin]]
 
 vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')
 vim.keymap.set('n', '<leader>w', ':write<CR>')
 vim.keymap.set('n', '<leader>q', ':quit<CR>')
 vim.keymap.set('n', '<leader>e', ':<C-w>d')
 vim.keymap.set('n', '<leader>cd', ':Explore<CR>')
-
 
 vim.pack.add({
 		{ src = "https://github.com/neovim/nvim-lspconfig" },
@@ -25,7 +36,6 @@ vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 vim.keymap.set('n', '<leader>ge', vim.diagnostic.open_float, { desc = 'Line diagnostics' })
 vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
 vim.keymap.set("n", "gr", function() vim.lsp.buf.references() end, opts)
-
 
 vim.keymap.set('n', '<leader>ff', ':Telescope find_files<CR>')
 vim.keymap.set('n', '<leader>fg', ':Telescope live_grep<CR>')
