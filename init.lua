@@ -17,12 +17,14 @@ vim.pack.add({
 		{ src = "https://github.com/neovim/nvim-lspconfig" },
 		{ src = "https://github.com/nvim-telescope/telescope.nvim" },
 		{ src = "https://github.com/nvim-lua/plenary.nvim" },
+		{ src = "https://github.com/nvim-treesitter/nvim-treesitter" },
 })
 
 vim.lsp.enable({ "lua_ls", "gopls", "ts_ls" })
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 vim.keymap.set('n', '<leader>ge', vim.diagnostic.open_float, { desc = 'Line diagnostics' })
 vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
+vim.keymap.set("n", "gr", function() vim.lsp.buf.references() end, opts)
 
 
 vim.keymap.set('n', '<leader>ff', ':Telescope find_files<CR>')
