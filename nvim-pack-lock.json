@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "gitsigns.nvim": {
+      "rev": "851a051e2bd2caba97e23314c68d69f1b1cf5d19",
+      "src": "https://github.com/lewis6991/gitsigns.nvim"
+    },
     "mini.pick": {
       "rev": "230805ad6d0d6e4cebbf377bad864ac20b83a1f0",
       "src": "https://github.com/echasnovski/mini.pick"
